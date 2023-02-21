@@ -178,6 +178,7 @@
 			<li>
 				<figure class="video-embed-block">
 					<h3 class="title"></h3>
+					<span onclick="openNav()">
 					<img src="assets/assets/icon/vid_icon.svg">
 					<picture>
 						<source class="image-thumb">
@@ -189,17 +190,26 @@
 							</div>
 							</div>
 					</picture>
-					<div class="embed"></div>
-					<a class="link">
-						<p class="link-title"></p>
-					</a>
-					<figcaption class="description"></figcaption>
-					<p class="type"></p>
+					</span>
+					<div id="mySidenav" class="sidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+						<div class="display">
+							<h1>
+								<a class="link">
+								<p class="link-title"></p>
+								</a>
+							</h1>
+						<div class="embed"></div>
+						<figcaption class="description"></figcaption>
+					<!-- <p class="type"></p>
 					<p class="time-updated"></p>
-					<p class="time-created"></p>
+					<p class="time-created"></p> -->
+						</div>
+					</div>
 				</figure>
 			</li>
 		</template>
+
 		<!-- Uploaded video files. -->
 		<template id="video-file-block">
 			<li>

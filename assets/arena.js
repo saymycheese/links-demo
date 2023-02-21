@@ -224,3 +224,15 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 		parseBlocks(data)
 	})
 
+
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "500px";
+		document.getElementById("main").style.marginLeft = "500px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+		document.body.style.backgroundColor = "white";
+	  }
